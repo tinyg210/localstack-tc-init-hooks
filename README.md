@@ -1,4 +1,4 @@
-# Testcontainers LocalStack Init Hooks Example
+# LocalStack w/ Testcontainers Init Hooks Example
 
 This repo is a small sample on how to use initialization hooks with the LocalStack container using Testcontainers.
 
