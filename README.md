@@ -52,10 +52,10 @@ In this case, there's a noticeable error message:
 
 You can make your file executable by running `chmod +x init.sh`. If the issue persists, make sure you clean the
 `/target` folder, otherwise the tests will use the previous file permissions that are tied to the `init` script in 
-`target/test-classes/init.sh`.
+`target/test-classes/init.sh`, since there's no new build.
 
 Another way to do this would be to tell Testcontainers to set the desired mode explicitly.
-This way our snippet becomes:
+This way, our snippet becomes:
 
 ```
 @Container
