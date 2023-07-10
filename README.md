@@ -18,7 +18,7 @@ would copy an initialization script to the container using the `/docker-entrypoi
       new LocalStackContainer(DockerImageName.parse("localstack/localstack:2.1.0"))
           .withCopyFileToContainer(
               MountableFile.forClasspathResource("init.sh"),
-              "/docker-entrypoint-initaws.d/init.sh");
+     // deprecated     "/docker-entrypoint-initaws.d/init.sh");
 ```
 
 Now `/docker-entrypoint-initaws.d` has been **deprecated** with the release of v2. However, if, for example, the user is still
